@@ -1,0 +1,122 @@
+@font-face {
+    font-family: 'Calculatrix 7';
+    src: url('font/Calculatrix-7.woff2') format('woff2'),
+        url('font/Calculatrix-7.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+#calculator {
+    margin: 4% auto 4% auto;
+    width:30%; /* or set width in px;*/
+    overflow: auto;
+    background-color: darkgrey;
+    padding:2%;
+    border-radius: 5px;
+    box-shadow: 14px 11px 0px 8px rgba(37, 36, 36, 0.74);
+    display: grid;
+    grid-template-columns: repeat(4,minmax(0, 1fr ));
+    grid-template-rows: repeat(6,minmax(0, 1fr 25%));
+    grid-gap: 15px;
+    grid-template-areas: 
+    "display display display display"  
+    "c ce divide multiply"
+    "one two three subtract"
+    "four five six add"
+    "seven eight nine equals"
+    "zero zero period equals";
+  }
+
+ #one{
+    grid-area:one;
+
+ }
+ 
+ #two{
+    grid-area:two;
+
+ } 
+ #three{
+    grid-area:three;
+
+ } 
+ #four{
+    grid-area:four;
+
+ } 
+ #five{
+    grid-area:five;
+
+ } 
+ #six{
+    grid-area:six;
+
+ } 
+ #seven{
+    grid-area:seven;
+
+ } 
+ #eight{
+    grid-area:eight;
+
+ }  
+ #nine{
+    grid-area:nine;
+}
+#zero{
+    grid-area:zero;
+
+} 
+#add{
+    grid-area:add;
+}
+#subtract{
+    grid-area:subtract;
+}
+#divide{
+    grid-area:divide;
+}
+#multiply{
+    grid-area:multiply;
+}
+#equals{
+    grid-area:equals;
+}
+#period{
+    grid-area: period;
+}
+#ce{
+    grid-area:ce;
+}
+#c{
+    grid-area:c;
+}
+
+#display{
+    padding: 20px 10px 0px 0px;
+    grid-area:display;
+    background-color: rgb(164, 190, 102);
+    text-align: right;
+    font-size: 2.5vw;
+    font-family: 'Calculatrix 7';
+}
+
+button{
+    border-radius: 10%;
+    font-size: 4.0vw;
+    color:black;
+    background-color: rgb(51, 51, 51);
+    box-shadow: 5px 5px 11px -3px rgba(0,0,0,0.74);
+}
+
+button:disabled{
+    color: black;
+    background-color: rgb(51, 51, 51);
+}
+.cancel{
+    background-color: rgb(226, 73, 52)
+}
+.numbers{
+    background-color: rgb(70, 74, 90);
+}
